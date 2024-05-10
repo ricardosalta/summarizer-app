@@ -28,7 +28,7 @@ openai_api_key = os.getenv("OPENAI_TOKEN")
 if groq_api_key:
     openai.api_base = "https://api.groq.com/openai/v1"
     openai.api_key = groq_api_key
-    language_model = "llama3-70b-8192"
+    language_model = "llama3-8b-8192"
 else:
     openai.api_key = openai_api_key
     language_model = "gpt-3.5-turbo-0125"
